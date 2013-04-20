@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<cordova>
+
 <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "grilan.corporation.xiii"
@@ -18,7 +18,7 @@
         Grylan Khedr 
     </author>
 	</widget>
-
+<cordova>
     <!--
     access elements control the Android whitelist.
     Domains are assumed blocked unless set otherwise
