@@ -8,15 +8,14 @@
 <script type="text/javascript" charset="utf-8" src="..\cordova-2.6.0.js"></script>
 </head>
 <body   style="text-align: center" >
-<h1 style="text-align:center"> Convertitore di numeri Romani!</h1>
+<h1 style="text-align:center"></h1>
 <div data-theme="a" data-role="content" role="main" style="color:#3399FF;" align="center"> Inserisci un numero compreso tra 0 e 5000 esclusi !
   <input type="number" data-theme="d"  id="numero" style="text-align:center">
   </input>
   <div  data-theme="a" style="color:#3399FF;" data-role="content" role="main">Il numero romano vale
     <div  data-theme="a" id="num_romano" align="center" style="font-size:36px" ></div>
     <div id="errore" style="text-align:center;font-size:20px" >Numero fuori dal range non compreso tra 0 e 4999! i numeri romani arrivano fino a 5000 escluso!</div>
-  </div>
-  <a data-rel="back" data-role="button" data-inline="true" style="text-align: center" > Back</a> </div>
+
 <script>
 $("#errore").hide();
 $("#numero").keyup(function convert(){
@@ -115,6 +114,11 @@ $("#numero").keyup(function convert(){
 $("[id|='num_romano']").text(numero_romano);
 });
 </script>
+
+  <div data-theme="a" data-role="header" data-add-back-btn="true" data-position="fixed">
+  <h3> Convertitore di numeri in numeri Romani</h3>
+  <a data-rel="back" data-icon="arrow-l" class="ui-btn-left" >Back</a>
+</div>
 <div data-theme="a" data-role="footer" data-position="fixed">
   <h3>Created by Grylan</h3>
 </div>
