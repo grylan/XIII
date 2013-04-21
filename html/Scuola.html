@@ -7,7 +7,9 @@
 <script type="text/javascript" charset="utf-8" src="..\js\convertitore_romani.js" ></script>
 <script type="text/javascript" charset="utf-8" src="..\imported\jquery.mobile-1.3.1.js"></script>
 <script type="text/javascript" charset="utf-8" src="..\cordova-2.6.0.js"></script>
-<script type="text/javascript" charset="utf-8" src="..\js\fileopener.js"></script>
+<script type="text/javascript" charset="utf-8" src="..\js\main.js"></script>
+<script type="text/javascript" charset="utf-8" src="..\js\pdfviewer.js"></script>
+<script type="text/javascript" charset="utf-8" src="..\js\downloader.js"></script>
 <script type="text/javascript">
 define(function apri(){	
 window.plugins.fileOpener.open("\informatica\01_laib_2013.pdf");
@@ -19,7 +21,7 @@ window.plugins.fileOpener.open("\informatica\01_laib_2013.pdf");
     <h3>INFORMATICA </h3>
     <ul class="ui-listview" data-dividertheme="d" data-theme="c" data-role="listview">
       <li class="ui-li ui-li-divider ui-bar-d" data-role="list-divider" role="heading">Settimana 1</li>
-      <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" data-corners="false"data-theme="c"><a onClick="window.open('file:informatica/01_laib_2013.pdf', '_blank', 'location=no');">ES 1</a> </li>
+      <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" data-corners="false"data-theme="c"><a onClick="window.plugins.pdfViewer.showPdf('/informatica/01_laib_2013.pdf', '_blank', 'location=no');">ES 1</a> </li>
       <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" data-corners="false"data-theme="c"><a onClick="window.open('file:informatica/02_laib_2013.pdf', '_blank', 'location=no');">ES 2</a> </li>
       <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" data-corners="false"data-theme="c"><a onClick="window.open('file:informatica/03_laib_2013.pdf', '_blank', 'location=no');">ES 3</a> </li>
       <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" data-corners="false"data-theme="c"><a onClick="window.open('file:informatica/04_laib_2013.pdf', '_blank', 'location=no');">ES 4</a> </li>

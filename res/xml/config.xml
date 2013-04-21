@@ -14,14 +14,21 @@
   <!-- allow local pages -->
   
   <access origin=".*"/>
-  <script src="phonegap.js"></script>
+  
   <!-- <content src="http://mysite.com/myapp.html" /> for external pages -->
   <content src="index.html" />
-   <preference name="useBrowserHistory" value="true" />
+  <preference name="useBrowserHistory" value="true" />
   <preference name="exit-on-suspend" value="false" />
   <plugins>
     <plugin name="Device" value="org.apache.cordova.Device"/>
-    <plugin name="SplashScreen" value="org.apache.cordova.SplashScreen"/>
+    <plugin name="SplashScreen"  value="org.apache.cordova.SplashScreen"/>
+    <plugin name="Storage" value="org.apache.cordova.Storage"/>
+    <plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser"/>
+    <plugin name="FileTransfer" value="org.apache.cordova.FileTransfer"/>
+    <plugin name="Storage" value="org.apache.cordova.Storage"/>
+    <plugin name="File" value="org.apache.cordova.FileUtils"/>
+	<plugin name="Downloader" value="com.phonegap.plugins.downloader.Downloader"/>
+    <plugin name="PdfViewer" value="com.phonegap.plugins.pdfViewer.PdfViewer"/>
   </plugins>
   <preference name="orientation" value="portrait" />
   <preference name="fullscreen" value="true" />
@@ -35,7 +42,6 @@
   <icon src="icons/ios/icon.png" gap:platform="ios" width="57" height="57" />
   <icon src="icons/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
   <icon src="icons/ios/icon_at_2x.png" gap:platform="ios" width="114" height="114" />
-  
   <icon src="icons/bb/icon.png" gap:platform="blackberry" />
   <icon src="icons/bb/icon.png" gap:platform="blackberry" gap:state="hover"/>
   <gap:splash src="splash.png" />
