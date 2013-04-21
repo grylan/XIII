@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-
+<meta charset="utf-8" />
 <title>XIII APP</title>
+<link rel="stylesheet" href="..\imported\jquery.mobile-1.3.1.min.css" />
 <script type="text/javascript" charset="utf-8" src="..\js\convertitore_romani.js" ></script>
 <script type="text/javascript" charset="utf-8" src="..\imported\jquery.mobile-1.3.1.js"></script>
 <script type="text/javascript" charset="utf-8" src="..\cordova-2.6.0.js"></script>
+<script type="text/javascript" charset="utf-8" src="..\js\fileopener.js"></script>
+<script type="text/javascript">
+define(function apri(){	
+window.plugins.fileOpener.open("\informatica\01_laib_2013.pdf");
+});</script>
 </head>
 <body   style="text-align: center" >
-<table cellspacing="3px" width="100%" >
-  <tr >
-    <td width="5%" ></td>
-    <td ><table cellspacing="5px" align="center"  >
-        <tr  align="center" style="text-align:center" >
-          <div>INFORMATICA</div>
-        </tr>
-        <tr>
-          <div>GEOMETRIA</div>
-        </tr>
-        <tr>
-          <div>FISICA</div>
-        </tr>
-      </table></td>
-    <td width="5%" ></td>
-  </tr>
-</table>
+<div data-role="collapsible-set" data-theme="a" data-collapsed="false" >
+  <div data-role="collapsible" data-content-theme="a" >
+    <h3>INFORMATICA </h3>
+    <ul class="ui-listview" data-dividertheme="d" data-theme="c" data-role="listview">
+      <li class="ui-li ui-li-divider ui-bar-d" data-role="list-divider" role="heading">Settimana 1</li>
+      <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" data-corners="false"data-theme="c"><a onClick="window.open('file:informatica/01_laib_2013.pdf', '_blank', 'location=no');">ES 1</a> </li>
+      <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" data-corners="false"data-theme="c"><a onClick="window.open('file:informatica/02_laib_2013.pdf', '_blank', 'location=no');">ES 2</a> </li>
+      <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" data-corners="false"data-theme="c"><a onClick="window.open('file:informatica/03_laib_2013.pdf', '_blank', 'location=no');">ES 3</a> </li>
+      <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" data-corners="false"data-theme="c"><a onClick="window.open('file:informatica/04_laib_2013.pdf', '_blank', 'location=no');">ES 4</a> </li>
+      <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" data-corners="false"data-theme="c"><a onClick="window.open('file:informatica/05_laib_2013.pdf', '_blank', 'location=no');">ES 5</a> </li>
+      <li class="ui-li ui-li-divider ui-bar-d" data-role="list-divider" role="heading">Settimana 2</li>
+      <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" data-corners="false"data-theme="c">ES 1</li>
+      <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" data-corners="false"data-theme="c">ES 2</li>
+      <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" data-corners="false"data-theme="c">ES 3</li>
+      <li class="ui-li ui-li-divider ui-bar-d" data-role="list-divider" role="heading">Settimana 3</li>
+      <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" data-corners="false"data-theme="c">ES 1</li>
+      <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" data-corners="false"data-theme="c">ES 2</li>
+      <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" data-corners="false"data-theme="c">ES 3</li>
+    </ul>
+  </div>
+  <div data-role="collapsible" data-theme="c" data-content-theme="a" >
+    <h3>GEOMETRIA </h3>
+    <p > WORK in PROGRESS</p>
+  </div>
+  <div data-role="collapsible" data-theme="b" data-content-theme="a" >
+    <h3>FISICA </h3>
+    <p > WORK in PROGRESS</p>
+  </div>
+</div>
 <div data-theme="a" data-role="header" data-add-back-btn="true" data-position="fixed">
   <h3>Scuola</h3>
-  <a data-rel="back" data-icon="arrow-l" class="ui-btn-left" >Back</a>
-</div>
+  <a data-rel="back" data-icon="arrow-l" class="ui-btn-left" >Back</a> </div>
 <div data-theme="a" data-role="footer" data-position="fixed">
   <h3>Created by Grylan</h3>
 </div>
