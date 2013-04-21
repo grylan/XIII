@@ -22,6 +22,11 @@
   <plugins>
     <plugin name="Device" value="org.apache.cordova.Device"/>
     <plugin name="SplashScreen"  value="org.apache.cordova.SplashScreen"/>
+    <plugin name="Storage" value="org.apache.cordova.Storage"/>
+    <plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser"/>
+    <plugin name="FileTransfer" value="org.apache.cordova.FileTransfer"/>
+    <plugin name="Storage" value="org.apache.cordova.Storage"/>
+    <plugin name="File" value="org.apache.cordova.FileUtils"/>
   </plugins>
   <preference name="orientation" value="portrait" />
   <preference name="fullscreen" value="true" />
