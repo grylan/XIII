@@ -1,56 +1,32 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8" />
-<title>XIII APP</title>
-<link rel="stylesheet" href="..\imported\jquery.mobile-1.3.1.min.css" />
-<script type="text/javascript" charset="utf-8" src="..\js\convertitore_romani.js" ></script>
-<script type="text/javascript" charset="utf-8" src="..\imported\jquery.mobile-1.3.1.js"></script>
-<script type="text/javascript" charset="utf-8" src="..\cordova-2.6.0.js"></script>
-<script type="text/javascript" charset="utf-8" src="..\js\main.js"></script>
-<script type="text/javascript" charset="utf-8" src="..\js\pdfviewer.js"></script>
-<script type="text/javascript" charset="utf-8" src="..\js\downloader.js"></script>
-<script type="text/javascript">
-define(function apri(){	
-window.plugins.fileOpener.open("\informatica\01_laib_2013.pdf");
-});</script>
-</head>
-<body   style="text-align: center" >
-<div data-role="collapsible-set" data-theme="a" data-collapsed="false" >
-  <div data-role="collapsible" data-content-theme="a" >
-    <h3>INFORMATICA </h3>
-    <ul class="ui-listview" data-dividertheme="d" data-theme="c" data-role="listview">
-      <li class="ui-li ui-li-divider ui-bar-d" data-role="list-divider" role="heading">Settimana 1</li>
-      <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" data-corners="false"data-theme="c"><a onClick="window.plugins.pdfViewer.showPdf('/informatica/01_laib_2013.pdf', '_blank', 'location=no');">ES 1</a> </li>
-      <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" data-corners="false"data-theme="c"><a onClick="window.open('file:informatica/02_laib_2013.pdf', '_blank', 'location=no');">ES 2</a> </li>
-      <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" data-corners="false"data-theme="c"><a onClick="window.open('file:informatica/03_laib_2013.pdf', '_blank', 'location=no');">ES 3</a> </li>
-      <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" data-corners="false"data-theme="c"><a onClick="window.open('file:informatica/04_laib_2013.pdf', '_blank', 'location=no');">ES 4</a> </li>
-      <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" data-corners="false"data-theme="c"><a onClick="window.open('file:informatica/05_laib_2013.pdf', '_blank', 'location=no');">ES 5</a> </li>
-      <li class="ui-li ui-li-divider ui-bar-d" data-role="list-divider" role="heading">Settimana 2</li>
-      <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" data-corners="false"data-theme="c">ES 1</li>
-      <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" data-corners="false"data-theme="c">ES 2</li>
-      <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" data-corners="false"data-theme="c">ES 3</li>
-      <li class="ui-li ui-li-divider ui-bar-d" data-role="list-divider" role="heading">Settimana 3</li>
-      <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" data-corners="false"data-theme="c">ES 1</li>
-      <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" data-corners="false"data-theme="c">ES 2</li>
-      <li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c" data-corners="false"data-theme="c">ES 3</li>
-    </ul>
-  </div>
-  <div data-role="collapsible" data-theme="c" data-content-theme="a" >
-    <h3>GEOMETRIA </h3>
-    <p > WORK in PROGRESS</p>
-  </div>
-  <div data-role="collapsible" data-theme="b" data-content-theme="a" >
-    <h3>FISICA </h3>
-    <p > WORK in PROGRESS</p>
-  </div>
-</div>
-<div data-theme="a" data-role="header" data-add-back-btn="true" data-position="fixed">
-  <h3>Scuola</h3>
-  <a data-rel="back" data-icon="arrow-l" class="ui-btn-left" >Back</a> </div>
-<div data-theme="a" data-role="footer" data-position="fixed">
-  <h3>Created by Grylan</h3>
-</div>
-<div data-add-back-btn="true" > </div>
-</body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head >
+		<title>XDrake</title>
+		<link href="../styles/main.css" rel="stylesheet" type="text/css" />
+		<script src="../cordova.js" type="text/javascript"></script>
+	</head>
+
+	<body   >
+		<div data-add-back-btn="true">
+		</div>
+
+		<div data-role="collapsible-set" data-theme="a"  data-collapsed="false" id="info" >
+
+		</div>
+		<div id="contenuto" ></div>
+
+		<script type="text/javascript">
+			carica();		
+		</script>
+
+		<div data-theme="a" data-role="header" data-add-back-btn="true" data-position="fixed">
+			<h3>Scuola</h3>
+			<a data-rel="back" data-icon="arrow-l" class="ui-btn-left" >Back</a>
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="oneFooter">
+			<span class="footerText">Created by Grylan</span>
+		</div>
+	</body>
 </html>
