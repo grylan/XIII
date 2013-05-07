@@ -8,7 +8,7 @@
   <!-- versionCode is optional and Android only -->
   
   <name>XIII</name>
-  <description>Un converitore da numeri interi a romani! per ora, ma in futuro chi lo sa (work in progress)</description>
+  <description>Un converitore da numeri interi a romani! per ora(work in progress)</description>
   <author href="http://grylan.tumblr.com/" >Grylan Khedr</author>
   <access origin="http://127.0.0.1*"/>
   <!-- allow local pages -->
@@ -27,8 +27,6 @@
     <plugin name="FileTransfer" value="org.apache.cordova.FileTransfer"/>
     <plugin name="Storage" value="org.apache.cordova.Storage"/>
     <plugin name="File" value="org.apache.cordova.FileUtils"/>
-	<plugin name="Downloader" value="com.phonegap.plugins.downloader.Downloader"/>
-    <plugin name="PdfViewer" value="com.phonegap.plugins.pdfViewer.PdfViewer"/>
   </plugins>
   <preference name="orientation" value="portrait" />
   <preference name="fullscreen" value="true" />
